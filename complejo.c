@@ -2,12 +2,14 @@
 #include <stdio.h>
 #include <math.h>
 
-void AsignarReal(COMPLEJO *x, DATO a){
-    x ->Re = a;
+COMPLEJO AsignarReal(COMPLEJO x, DATO a){
+    x.Re = a;
+    return x;
 }
 
-void AsignarImaginaria(COMPLEJO *x, DATO a){
-    x ->Img = a;
+COMPLEJO AsignarImaginaria(COMPLEJO x, DATO a){
+    x.Img = a;
+    return x;
 }
 
 float ParteReal(COMPLEJO x){

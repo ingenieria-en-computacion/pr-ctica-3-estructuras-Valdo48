@@ -5,15 +5,15 @@
 int main(){
     COMPLEJO a, b, c, d, r;
 
-    AsignarReal(&a, 2.5);
-    AsignarReal(&b, 3.4);
-    AsignarReal(&c, 4.8);
-    AsignarReal(&d, 5.3);
+    a = AsignarReal(a, 2.5);
+    b = AsignarReal(b, 3.4);
+    c = AsignarReal(c, 4.8);
+    d = AsignarReal(d, 5.3);
 
-    AsignarImaginaria(&a, 6.9);
-    AsignarImaginaria(&b, 7.7);
-    AsignarImaginaria(&c, 8.1);
-    AsignarImaginaria(&d, 9.2);
+    a = AsignarImaginaria(a, 6.9);
+    b = AsignarImaginaria(b, 7.7);
+    c = AsignarImaginaria(c, 8.1);
+    d = AsignarImaginaria(d, 9.2);
 
     printf("Complejo a:\n %.2f + %.2fi\n", ParteReal(a), ParteImaginaria(a));
     printf("Complejo b:\n %.2f + %.2fi\n", ParteReal(b), ParteImaginaria(b));
