@@ -15,10 +15,10 @@ int main(){
     c = AsignarImaginaria(c, 8.1);
     d = AsignarImaginaria(d, 9.2);
 
-    printf("Complejo a:\n %.2f + %.2fi\n", ParteReal(a), ParteImaginaria(a));
-    printf("Complejo b:\n %.2f + %.2fi\n", ParteReal(b), ParteImaginaria(b));
-    printf("Complejo c:\n %.2f + %.2fi\n", ParteReal(c), ParteImaginaria(c));
-    printf("Complejo d:\n %.2f + %.2fi\n", ParteReal(d), ParteImaginaria(d));
+    printf("Complejo a:\n %.1f + %.1fi\n", ParteReal(a), ParteImaginaria(a));
+    printf("Complejo b:\n %.1f + %.1fi\n", ParteReal(b), ParteImaginaria(b));
+    printf("Complejo c:\n %.1f + %.1fi\n", ParteReal(c), ParteImaginaria(c));
+    printf("Complejo d:\n %.1f + %.1fi\n", ParteReal(d), ParteImaginaria(d));
 
     r = SumaComplejos(SumaComplejos(a, b), SumaComplejos(c, d)); 
     printf("La suma de todos los complejos anteriores es:\n %.2f + %.2fi\n", ParteReal(r), ParteImaginaria(r));
